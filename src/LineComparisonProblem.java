@@ -1,4 +1,5 @@
 import java.util.*;
+import java.lang.*;
 public class LineComparisonProblem {
 
 	public static void main(String[] args) {
@@ -23,6 +24,14 @@ public class LineComparisonProblem {
 		y2=s.nextInt();
 		 double len2 = Math.sqrt(Math.pow((x2-x1),2)+Math.pow((y2-y1),2));
 		 System.out.println("length of line 2 is " + len2);
+		 
+		 String strlen1 = String.valueOf(len1);
+	  	    String strlen2 = String.valueOf(len2);
+		 
+		if(strlen1.equals(strlen2))
+			 System.out.println("the line are equal");
+			 else
+				 System.out.println("the line are not equal");
 	}
 
 }
