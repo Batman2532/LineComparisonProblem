@@ -1,12 +1,13 @@
 import java.util.*;
 import java.lang.*;
 public class LineComparisonProblem {
-
-	public static void main(String[] args) {
+	public static int x1,x2,y1,y2;
+	
+	public void calculate() {
 		System.out.println("Welcome to line comparasion problem ");
 		Scanner s = new Scanner(System.in);
 		
-		int x1,x2,y1,y2;
+		
 		System.out.println("enter details for line 1");
 		
 		x1=s.nextInt();
@@ -40,6 +41,12 @@ public class LineComparisonProblem {
 			System.out.println("line 1 is greater then line 2");
 			else			
 				System.out.println("Lines are equal");
+	}
+
+	public static void main(String[] args) {
+		LineComparisonProblem new1 = new LineComparisonProblem();
+		new1.calculate();
+		
 	}
 
 }
